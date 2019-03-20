@@ -33,4 +33,4 @@ else
 fi
 
 echo "Run unit testing..."
-"${__bash_unit_tool}" "${__tests_dir}"/test_*
+"${__bash_unit_tool}" -f tap "${__tests_dir}"/test_* > "${__dir}/test_results_tap.txt"
