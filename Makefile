@@ -8,8 +8,8 @@ help: ## Show this help.
 
 .PHONY: test
 test: ## Runs a series of tests against implemented bash scripts within this context.
-	./download-testing-tools.sh
-	./run-tests.sh
+	./download_testing_tools.sh
+	./run_tests.sh
 
 
 check_defined = \
