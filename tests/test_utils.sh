@@ -8,6 +8,6 @@ test_superuser_required() {
 }
 
 test_should_get_error_message() {
-    assert_equals "Error! Root privileges are required in order to run this script." "$(run_as_superuser_trap 2>&1)" \
+    assert_equals "Error! Root privileges are required in order to run this script..." "$(run_as_superuser_trap 2>&1)" \
         "Are you running these tests as root? You shouldn't:)"
 }
