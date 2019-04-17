@@ -8,7 +8,7 @@ help: ## Show this help.
 
 .PHONY: test
 test: clean-cov ## Runs a series of tests against implemented bash scripts within this context.
-	./download_testing_tools.sh
+	#./download_testing_tools.sh
 	kcov --include-path=includes cov ./run_tests.sh
 
 .PHONY: clean-cov
